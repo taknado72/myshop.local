@@ -10,6 +10,5 @@
         
         {include file = 'leftcolumn.tpl'}        
                 
-        <div id="centerColumn">
-            
-            centerColumn           
+        <div id="centerColumn">            
+                   
