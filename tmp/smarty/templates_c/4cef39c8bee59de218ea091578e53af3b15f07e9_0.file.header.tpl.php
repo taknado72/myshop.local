@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.24, created on 2017-08-15 19:51:36
+<?php /* Smarty version 3.1.24, created on 2017-08-18 20:26:22
          compiled from "../views/default/header.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:30206599334a8ad51a2_95907203%%*/
+/*%%SmartyHeaderCode:144515997314e78e813_26468346%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '4cef39c8bee59de218ea091578e53af3b15f07e9' => 
     array (
       0 => '../views/default/header.tpl',
-      1 => 1502819162,
+      1 => 1503079364,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '30206599334a8ad51a2_95907203',
+  'nocache_hash' => '144515997314e78e813_26468346',
   'variables' => 
   array (
     'pageTitle' => 0,
@@ -21,13 +21,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.24',
-  'unifunc' => 'content_599334a8c19571_31818209',
+  'unifunc' => 'content_5997314ea845c8_43192781',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_599334a8c19571_31818209')) {
-function content_599334a8c19571_31818209 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5997314ea845c8_43192781')) {
+function content_5997314ea845c8_43192781 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '30206599334a8ad51a2_95907203';
+$_smarty_tpl->properties['nocache_hash'] = '144515997314e78e813_26468346';
 ?>
 <html>
     <head>
@@ -35,6 +35,12 @@ $_smarty_tpl->properties['nocache_hash'] = '30206599334a8ad51a2_95907203';
 </title>
         <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['templateWebPath']->value;?>
 css/main.css" type="text/css">
+        <?php echo '<script'; ?>
+ type="text/javascript" src="/js/jquery-3.2.1.min.js"><?php echo '</script'; ?>
+>
+        <?php echo '<script'; ?>
+ type="text/javascript" src="/js/main.js"><?php echo '</script'; ?>
+>
     </head>
     <body>
         <div id="header">
