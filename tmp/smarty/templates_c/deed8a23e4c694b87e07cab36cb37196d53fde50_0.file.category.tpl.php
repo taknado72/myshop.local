@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.24, created on 2017-08-16 20:02:29
+<?php /* Smarty version 3.1.24, created on 2017-08-19 08:21:33
          compiled from "../views/default/category.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:16956599488b56604d2_35550154%%*/
+/*%%SmartyHeaderCode:83615997d8eda4e7f4_08585522%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'deed8a23e4c694b87e07cab36cb37196d53fde50' => 
     array (
       0 => '../views/default/category.tpl',
-      1 => 1502906084,
+      1 => 1503123563,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '16956599488b56604d2_35550154',
+  'nocache_hash' => '83615997d8eda4e7f4_08585522',
   'variables' => 
   array (
     'rsCategory' => 0,
@@ -23,13 +23,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.24',
-  'unifunc' => 'content_599488b569ece6_62706171',
+  'unifunc' => 'content_5997d8edacf699_11499970',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_599488b569ece6_62706171')) {
-function content_599488b569ece6_62706171 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5997d8edacf699_11499970')) {
+function content_5997d8edacf699_11499970 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '16956599488b56604d2_35550154';
+$_smarty_tpl->properties['nocache_hash'] = '83615997d8eda4e7f4_08585522';
 ?>
 
 <h1> Товары категории <?php echo $_smarty_tpl->tpl_vars['rsCategory']->value['name'];?>

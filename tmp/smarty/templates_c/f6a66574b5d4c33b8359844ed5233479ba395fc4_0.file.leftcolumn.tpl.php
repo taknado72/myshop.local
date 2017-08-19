@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.24, created on 2017-08-18 20:26:22
+<?php /* Smarty version 3.1.24, created on 2017-08-19 13:36:31
          compiled from "../views/default/leftcolumn.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:172005997314eb72a71_12531722%%*/
+/*%%SmartyHeaderCode:2529599822bf2abf57_88600278%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f6a66574b5d4c33b8359844ed5233479ba395fc4' => 
     array (
       0 => '../views/default/leftcolumn.tpl',
-      1 => 1503079662,
+      1 => 1503142580,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '172005997314eb72a71_12531722',
+  'nocache_hash' => '2529599822bf2abf57_88600278',
   'variables' => 
   array (
     'rsCategories' => 0,
@@ -23,13 +23,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.24',
-  'unifunc' => 'content_5997314ec5d0b1_80971373',
+  'unifunc' => 'content_599822bf30d9e4_86003002',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5997314ec5d0b1_80971373')) {
-function content_5997314ec5d0b1_80971373 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_599822bf30d9e4_86003002')) {
+function content_599822bf30d9e4_86003002 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '172005997314eb72a71_12531722';
+$_smarty_tpl->properties['nocache_hash'] = '2529599822bf2abf57_88600278';
 ?>
        
         
@@ -77,6 +77,27 @@ $_smarty_tpl->tpl_vars['item'] = $foreach_item_Sav;
 }
 ?>    
             </div>
+            
+            <div id="userBox" class="hideme">
+                <a href="#" id="userLink"></a><br />
+                <a href="/user/logout/" onclick="logout();">Выход</a>
+            </div>
+            
+            
+            <div id="registerBox">
+                <div class="menuCaption showHidden" onclick="showRegisterBox();">Регистрация</div>
+                <div id="registerBoxHidden">
+                    email:<br />
+                    <input type="text" id="email" name="email" value=""/><br />
+                    пароль:<br />
+                    <input type="password" id="pwd1" name="pwd1" value=""/><br />
+                    повторить пароль:<br />
+                    <input type="password" id="pwd2" name="pwd2" value=""/><br />
+                    <input type="button" onclick="registerNewUser();" value="Зарегистрироваться"/>
+                </div>
+                
+            </div>
+            
             
             <div class="menuCaption">Корзина</div>
             <a href="/cart/" title="Перейти в корзину">В корзине</a>
