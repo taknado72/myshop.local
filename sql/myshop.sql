@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.0
+-- version 4.6.5.2
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Время создания: Авг 19 2017 г., 13:48
--- Версия сервера: 10.1.25-MariaDB
--- Версия PHP: 5.6.31
+-- Время создания: Авг 20 2017 г., 20:40
+-- Версия сервера: 10.1.21-MariaDB
+-- Версия PHP: 5.6.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -96,13 +94,11 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `email`, `pwd`, `name`, `phone`, `adress`) VALUES
-(1, 'user1', '24c9e15e52afc47c225b757e7bee1f9d', '', '', ''),
-(2, 'user2', '7e58d63b60197ceb55a1c487989a3720', '', '', ''),
-(3, '333', '310dcbbf4cce62f762a2aaa148d556bd', '', '', ''),
-(4, '444', '550a141f12de6341fba65b0ad0433500', '', '', ''),
-(5, '55', 'b53b3a3d6ab90ce0268229151c9bde11', '', '', ''),
-(6, '777', 'f1c1592588411002af340cbaedd6fc33', '', '', ''),
-(7, '555', '15de21c670ae7c3f6f3f1f37029303c9', '', '', '');
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', '', '', ''),
+(2, 'u1', 'e4774cdda0793f86414e8b9140bb6db4', '', '', ''),
+(3, 'u2', '270c1b084f3f146eb5787075158d9c53', '', '', ''),
+(4, 'u3', '532a7b8e0328a8d05a8e6258b28b9a36', '', '', ''),
+(5, 'user3', '92877af70a45fd6a2ed7fe81e1236b78', '', '', '');
 
 --
 -- Индексы сохранённых таблиц
@@ -146,8 +142,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;COMMIT;
-
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

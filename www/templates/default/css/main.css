@@ -42,3 +42,13 @@ body{
 img{
 	display: block;
 }
+
+.showHidden{
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
+#registerBoxHidden{
+    display: none;
+}
