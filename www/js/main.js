@@ -134,7 +134,7 @@ function login(){
     var email = $('#loginEmail').val();
     var pwd = $('#loginPwd').val();
     
-    var postData = "email="+ email +"&pwd" +pwd;
+    var postData = "email="+ email +"&pwd=" +pwd;
     
     $.ajax({
         type:'POST',
@@ -181,7 +181,7 @@ function updateUserData(){
     var adress = $('#newAdress').val();
     var pwd1 = $('#newPwd1').val();
     var pwd2 = $('#newPwd2').val();
-    var curPwd = $('#newPwd').val();
+    var curPwd = $('#curPwd').val();
     var name = $('#newName').val();
     
     var postData = {phone: phone,

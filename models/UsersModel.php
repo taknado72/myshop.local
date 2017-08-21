@@ -114,7 +114,7 @@ function checkUserEmail($email){
  */
 function loginUser($email, $pwd){
     $email = htmlspecialchars(mysql_real_escape_string($email));
-    $pwd = md5(trim($pwd));
+    $pwd = md5($pwd);
    
     $sql = "SELECT * FROM users
             WHERE (`email` = '{$email}' and `pwd` = '{$pwd}')
