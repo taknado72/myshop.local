@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.24, created on 2017-08-19 10:15:29
+<?php /* Smarty version 3.1.24, created on 2017-08-25 13:25:38
          compiled from "../views/default/cart.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:309285997f3a1dbc835_46899539%%*/
+/*%%SmartyHeaderCode:806359a00932204863_90544254%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9bd9c266d93831f16a7655969041652050eea439' => 
     array (
       0 => '../views/default/cart.tpl',
-      1 => 1503130526,
+      1 => 1503655966,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '309285997f3a1dbc835_46899539',
+  'nocache_hash' => '806359a00932204863_90544254',
   'variables' => 
   array (
     'rsProducts' => 0,
@@ -21,13 +21,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.24',
-  'unifunc' => 'content_5997f3a1e87a68_98079127',
+  'unifunc' => 'content_59a009325c19c1_81039088',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5997f3a1e87a68_98079127')) {
-function content_5997f3a1e87a68_98079127 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_59a009325c19c1_81039088')) {
+function content_59a009325c19c1_81039088 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '309285997f3a1dbc835_46899539';
+$_smarty_tpl->properties['nocache_hash'] = '806359a00932204863_90544254';
 ?>
 
 
@@ -37,6 +37,7 @@ $_smarty_tpl->properties['nocache_hash'] = '309285997f3a1dbc835_46899539';
 В корзине пусто.
 
 <?php } else { ?>
+<form action="/cart/order/" method="POST"
     <h2>Данные заказа</h2>
     <table>
         <tr>
@@ -122,6 +123,9 @@ $_smarty_tpl->tpl_vars['item'] = $foreach_item_Sav;
 }
 ?>
    </table>
+   
+   <input type="submit" value="Оформить заказ"/>
+</form>
 
 <?php }
 }
