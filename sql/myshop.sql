@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.5.2
+-- version 4.7.0
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Время создания: Авг 29 2017 г., 20:04
--- Версия сервера: 10.1.21-MariaDB
--- Версия PHP: 5.6.30
+-- Время создания: Авг 31 2017 г., 09:02
+-- Версия сервера: 10.1.25-MariaDB
+-- Версия PHP: 5.6.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -56,7 +58,7 @@ CREATE TABLE `orders` (
   `user_id` int(11) NOT NULL,
   `date_created` datetime NOT NULL,
   `date_payment` datetime DEFAULT NULL,
-  `date_modefication` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `date_modification` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `status` tinyint(4) NOT NULL DEFAULT '0',
   `comment` text NOT NULL,
   `user_ip` varchar(15) NOT NULL
@@ -66,7 +68,7 @@ CREATE TABLE `orders` (
 -- Дамп данных таблицы `orders`
 --
 
-INSERT INTO `orders` (`id`, `user_id`, `date_created`, `date_payment`, `date_modefication`, `status`, `comment`, `user_ip`) VALUES
+INSERT INTO `orders` (`id`, `user_id`, `date_created`, `date_payment`, `date_modification`, `status`, `comment`, `user_ip`) VALUES
 (1, 1, '2017-08-25 15:37:23', NULL, '2017-08-25 13:37:23', 0, 'id пользователя: 1<br />\n                Имя: admin<br />\n                Телефон: phone1<br />\n                Адрес: adress1\"', '127.0.0.1'),
 (2, 1, '2017-08-25 15:38:17', NULL, '2017-08-25 13:38:17', 0, 'id пользователя: 1<br />\n                Имя: admin<br />\n                Телефон: phone1<br />\n                Адрес: adress1\"', '127.0.0.1'),
 (3, 5, '2017-08-25 16:19:03', NULL, '2017-08-25 14:19:03', 0, 'id пользователя: 5<br />\n                Имя: user3<br />\n                Телефон: tel3<br />\n                Адрес: adr3\"', '127.0.0.1'),
@@ -76,8 +78,9 @@ INSERT INTO `orders` (`id`, `user_id`, `date_created`, `date_payment`, `date_mod
 (7, 5, '2017-08-25 16:44:06', NULL, '2017-08-25 14:44:06', 0, 'id пользователя: 5<br />\n                Имя: user3<br />\n                Телефон: tel3<br />\n                Адрес: adr3', '127.0.0.1'),
 (8, 5, '2017-08-25 16:50:01', NULL, '2017-08-25 14:50:01', 0, 'id пользователя: 5<br />\n                Имя: user3<br />\n                Телефон: tel3<br />\n                Адрес: adr3', '127.0.0.1'),
 (9, 5, '2017-08-25 16:50:13', NULL, '2017-08-25 14:50:13', 0, 'id пользователя: 5<br />\n                Имя: user3<br />\n                Телефон: tel3<br />\n                Адрес: adr3', '127.0.0.1'),
-(10, 5, '2017-08-25 16:55:44', NULL, '2017-08-25 14:55:44', 0, 'id пользователя: 5<br />\n                Имя: user3<br />\n                Телефон: tel3<br />\n                Адрес: adr3', '127.0.0.1'),
-(11, 7, '2017-08-26 14:50:18', NULL, '2017-08-26 14:50:24', 1, 'id пользователя: 7<br />\n                Имя: user6<br />\n                Телефон: 666666<br />\n                Адрес: adr6', '127.0.0.1');
+(10, 5, '2017-08-25 16:55:44', '2017-08-27 00:00:00', '2017-08-31 06:34:29', 0, 'id пользователя: 5<br />\n                Имя: user3<br />\n                Телефон: tel3<br />\n                Адрес: adr3', '127.0.0.1'),
+(11, 7, '2017-08-26 14:50:18', NULL, '2017-08-31 06:20:11', 0, 'id пользователя: 7<br />\n                Имя: user6<br />\n                Телефон: 666666<br />\n                Адрес: adr6', '127.0.0.1'),
+(12, 1, '2017-08-31 07:54:06', NULL, '2017-08-31 05:54:06', 0, 'id пользователя: 1<br />\r\n                Имя: admin<br />\r\n                Телефон: phone1<br />\r\n                Адрес: adress1', '127.0.0.1');
 
 -- --------------------------------------------------------
 
@@ -106,7 +109,10 @@ INSERT INTO `products` (`id`, `category_id`, `name`, `description`, `price`, `im
 (4, 4, 'Apple 3S', 'Телефон Apple 3S', 20000, '4.jpg', 1),
 (5, 4, 'Apple 4S', 'Телефон Apple 4S', 22000, '5.jpg', 1),
 (6, 4, 'Apple 6S', 'Телефон Apple 6S', 23000, '6.jpg', 1),
-(7, 4, 'Apple 7S', 'Телефон Apple 7S', 24000, '7.jpg', 1);
+(7, 4, 'Apple 7S', 'Телефон Apple 7S', 24000, '7.jpg', 1),
+(8, 1, 'p111', '                                                                                                описание p11111\n                \n                \n                \n                ', 11111, '', 0),
+(9, 6, 'планшет Acer 1', 'планшет Acer 1\n                ', 20000, '9.jpg', 1),
+(10, 1, 'p33', '                                                                                                                                                                                                p3p3p3\n                \n                \n                \n                \n                \n                \n                \n                ', 333, '', 0);
 
 -- --------------------------------------------------------
 
@@ -129,7 +135,8 @@ CREATE TABLE `purchase` (
 INSERT INTO `purchase` (`id`, `order_id`, `product_id`, `price`, `amount`) VALUES
 (1, 10, 1, 3000, 1),
 (2, 10, 6, 23000, 1),
-(3, 11, 6, 23000, 1);
+(3, 11, 6, 23000, 1),
+(4, 12, 4, 20000, 1);
 
 -- --------------------------------------------------------
 
@@ -208,22 +215,23 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT для таблицы `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT для таблицы `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT для таблицы `purchase`
 --
 ALTER TABLE `purchase`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

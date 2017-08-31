@@ -10,7 +10,7 @@
             <h1>my shop - интернет магазин</h1>
         </div>
         
-        {include file = 'adminLeftcolumn.tpl'}        
+        {include file = 'leftcolumn.tpl'}        
                 
         <div id="centerColumn">            
                    

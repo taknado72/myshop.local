@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.24, created on 2017-08-29 19:38:40
+<?php /* Smarty version 3.1.24, created on 2017-08-30 09:11:15
          compiled from "../views/admin/admin.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:2934659a5a6a0e35036_42857591%%*/
+/*%%SmartyHeaderCode:1772559a66513f29474_40471224%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '0bacf7f84d3aa21952947e0df9aaa00d1aac1e41' => 
     array (
       0 => '../views/admin/admin.tpl',
-      1 => 1504028298,
+      1 => 1504073383,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2934659a5a6a0e35036_42857591',
+  'nocache_hash' => '1772559a66513f29474_40471224',
   'variables' => 
   array (
     'rsCategories' => 0,
@@ -21,13 +21,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.24',
-  'unifunc' => 'content_59a5a6a0e96ac9_86214394',
+  'unifunc' => 'content_59a66513f38e79_96520407',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_59a5a6a0e96ac9_86214394')) {
-function content_59a5a6a0e96ac9_86214394 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_59a66513f38e79_96520407')) {
+function content_59a66513f38e79_96520407 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '2934659a5a6a0e35036_42857591';
+$_smarty_tpl->properties['nocache_hash'] = '1772559a66513f29474_40471224';
 ?>
 <div id="blockNewCategory">
     Новая категория:

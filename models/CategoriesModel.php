@@ -110,3 +110,52 @@ function insertCat($catName, $catParentId = 0){
     return $id;
             
 }
+
+
+/**
+ * Получить все категории
+ * 
+ * @return array массив категорий
+ */
+function getAllCategories(){
+    $sql = 'SELECT *
+            FROM categories
+            ORDER BY parent_id ASC';
+    
+    $rs = mysql_query($sql);
+    
+    return createSmartyRsArray($rs);
+}
+
+
+
+/**
+ * обновление категорий
+ * 
+ * @param integer $itemId  ID категории
+ * @param integer $parentId  ID главной категории
+ * @param string $newName новое имя категории
+ * @return type Description
+ */
+function updateCategoryData($itemId, $parentId = -1, $newName = ''){
+    
+    $set = array();
+    
+    if($newName){
+        $set[] = "`name` = '{$newName}'";
+    }
+    
+    if($parentId > -1){
+        $set[] = "`parent_id` = '{$parentId}'";
+    }
+    
+    $setStr = implode($set, ", ");
+    $sql = "UPDATE categories
+            SET {$setStr}
+            WHERE id = '{$itemId}'";  
+
+    $rs = mysql_query($sql);
+    
+    return $rs;
+    
+}
