@@ -9,7 +9,8 @@ define ('PathPostfix', 'Controller.php');
 //<
 
 //> используемый шаблон
-$template = 'default';
+//$template = 'default';
+$template = 'texturia';
 $templateAdmin = 'admin';
 
 // пути к файлам шаблонов (*.tpl)
