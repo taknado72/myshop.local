@@ -83,19 +83,19 @@
                     <div class="re-link menuCaption showHidden" onclick="showRegisterBox();">Регистрация</div>
                     <div id="form-login">
                         <form action="" method="" id="form-login">
-                        <fieldset class="input_">
-                            <div id="registerBoxHidden" class="hideme">
-                                <p>email:<br />
-                                <input type="text" id="email" name="email" size="30" value=""/><br />
-                                пароль:<br />
-                                <input type="password" id="pwd1" name="pwd1" size="30" value=""/><br />
-                                повторить пароль:<br />
-                                <input type="password" id="pwd2" name="pwd2" size="30" value=""/><br />
-                                </p>
-                                <input type="button" class="buttonLogin" onclick="registerNewUser();" value="Зарегистрироваться"/>
-                            </div>
-                        </fieldset> 
-                            </form>
+                            <fieldset class="input_">
+                                <div id="registerBoxHidden" class="hideme">
+                                    <p>email:<br />
+                                    <input type="text" id="email" name="email" size="30" value=""/><br />
+                                    пароль:<br />
+                                    <input type="password" id="pwd1" name="pwd1" size="30" value=""/><br />
+                                    повторить пароль:<br />
+                                    <input type="password" id="pwd2" name="pwd2" size="30" value=""/><br />
+                                    </p>
+                                    <input type="button" class="buttonLogin" onclick="registerNewUser();" value="Зарегистрироваться"/>
+                                </div>
+                            </fieldset> 
+                        </form>
                     </div>
                     <p></p>
 

@@ -566,7 +566,7 @@ h1,h2 {
   padding-left: 0px;
   color:#818181;
   font-size:28px;
-  background: url("../images/jf_div.png") repeat-x scroll left bottom transparent;
+  /*background: url("../images/jf_div.png") repeat-x scroll left bottom transparent;*/
   padding-bottom:15px;  
   margin: 0;
   font-weight: normal;
@@ -1605,4 +1605,10 @@ a.ve-link:hover {
     list-style: outside none none;
     margin: 0;
     padding: 0;
+}
+
+
+
+.hideme{
+    display: none;
 }

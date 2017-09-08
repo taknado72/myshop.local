@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.24, created on 2017-08-30 14:07:34
+<?php /* Smarty version 3.1.24, created on 2017-09-08 11:29:47
          compiled from "../views/admin/adminProducts.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:39759a6aa860c6f86_86407148%%*/
+/*%%SmartyHeaderCode:1749559b2630bf26389_16043314%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'c344f5292de5db935fb9367c4e2d15885db6d3ed' => 
     array (
       0 => '../views/admin/adminProducts.tpl',
-      1 => 1504094520,
+      1 => 1504862935,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '39759a6aa860c6f86_86407148',
+  'nocache_hash' => '1749559b2630bf26389_16043314',
   'variables' => 
   array (
     'rsCategories' => 0,
@@ -23,15 +23,26 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.24',
-  'unifunc' => 'content_59a6aa8614fb20_92039434',
+  'unifunc' => 'content_59b2630c059288_62224143',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_59a6aa8614fb20_92039434')) {
-function content_59a6aa8614fb20_92039434 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_59b2630c059288_62224143')) {
+function content_59b2630c059288_62224143 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '39759a6aa860c6f86_86407148';
+$_smarty_tpl->properties['nocache_hash'] = '1749559b2630bf26389_16043314';
 ?>
 <h2>Товар</h2>
+<input type="button" onclick="createXML();" value="Сохранить в XML">
+<div id="xml-place"></div>
+<hr>
+
+Импорт
+<form action="/admin/loadfromxml/" method="post" enctype="multipart/form-data">
+    <input type="file" name="filename"><br>
+    <input type="submit" value="Загрузить"><br>
+</form>
+<hr>
+
 
 <table border="1" cellpadding="1" cellspacing="1">
     <caption>Добавить продукт</caption>

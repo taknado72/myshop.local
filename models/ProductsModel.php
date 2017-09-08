@@ -158,3 +158,29 @@ function updateProductImage($itemId, $newFileName){
     
     return $rs;
 }
+
+
+/**
+ * Вставка импортируемых товаров в БД
+ * 
+ * @param type $aProducts
+ * @return boolean
+ */
+function insertImportProducts($aProducts){
+    if( !is_array($aProducts)) return false;
+    
+    $sql = "INSERT INTO products
+        (`name`, `category_id`, `description`, `price`, `status`)
+        VALUES
+        ";
+    
+    $cnt = count($aProducts);
+    for($i = 0; $i < $cnt; $i++){
+        if($i > 0) $sql .= ', ';
+        $sql .= "('" . implode("', '", $aProducts[$i]) . "')"; 
+    }
+    
+    $rs = mysql_query($sql);
+    return $rs;
+    
+}

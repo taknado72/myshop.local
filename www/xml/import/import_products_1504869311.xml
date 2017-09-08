@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<products><product><id>8</id><category_id>1</category_id><name>FLY 100</name><description>Телефон FLY 100</description><price>11111</price><image>8.jpg</image><status>0</status></product><product><id>10</id><category_id>1</category_id><name>Nokia 6800</name><description>Телефон Nokia 6800 флагман продаж&#13;
+                &#13;
+                &#13;
+                &#13;
+                &#13;
+                &#13;
+                &#13;
+                &#13;
+                </description><price>333</price><image>10.jpg</image><status>0</status></product><product><id>1</id><category_id>3</category_id><name>GT-S3500</name><description>Телефон GT-S3500</description><price>3000</price><image>1.jpg</image><status>1</status></product><product><id>2</id><category_id>3</category_id><name>S-5670 Galaxy</name><description>Телефон S-5670 Galaxy</description><price>7000</price><image>2.jpg</image><status>1</status></product><product><id>3</id><category_id>3</category_id><name>GT-E2600</name><description>Телефон GT-E2600</description><price>5000</price><image>3.jpg</image><status>1</status></product><product><id>4</id><category_id>4</category_id><name>Apple 3S</name><description>Телефон Apple 3S</description><price>20000</price><image>4.jpg</image><status>1</status></product><product><id>5</id><category_id>4</category_id><name>Apple 4S</name><description>Телефон Apple 4S</description><price>22000</price><image>5.jpg</image><status>1</status></product><product><id>6</id><category_id>4</category_id><name>Apple 6S</name><description>Телефон Apple 6S</description><price>23000</price><image>6.jpg</image><status>1</status></product><product><id>7</id><category_id>4</category_id><name>Apple 7S</name><description>Телефон Apple 7S</description><price>24000</price><image>7.jpg</image><status>1</status></product><product><id>9</id><category_id>6</category_id><name>планшет Acer 1</name><description>планшет Acer 1
+                </description><price>20000</price><image>9.jpg</image><status>1</status></product></products>

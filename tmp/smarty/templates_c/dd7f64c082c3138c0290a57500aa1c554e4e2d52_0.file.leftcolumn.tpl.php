@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.24, created on 2017-09-07 15:51:07
+<?php /* Smarty version 3.1.24, created on 2017-09-07 16:23:41
          compiled from "../views/texturia/leftcolumn.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:288259b14ecb6aa249_24510567%%*/
+/*%%SmartyHeaderCode:1329659b1566db85608_75460829%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'dd7f64c082c3138c0290a57500aa1c554e4e2d52' => 
     array (
       0 => '../views/texturia/leftcolumn.tpl',
-      1 => 1504792264,
+      1 => 1504793957,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '288259b14ecb6aa249_24510567',
+  'nocache_hash' => '1329659b1566db85608_75460829',
   'variables' => 
   array (
     'rsCategories' => 0,
@@ -25,13 +25,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.24',
-  'unifunc' => 'content_59b14ecb6f8447_07163387',
+  'unifunc' => 'content_59b1566dc21a01_73168706',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_59b14ecb6f8447_07163387')) {
-function content_59b14ecb6f8447_07163387 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_59b1566dc21a01_73168706')) {
+function content_59b1566dc21a01_73168706 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '288259b14ecb6aa249_24510567';
+$_smarty_tpl->properties['nocache_hash'] = '1329659b1566db85608_75460829';
 ?>
    <div id="jf-right">
        <div class="jfmod module" id="Mod88"> 
@@ -151,19 +151,19 @@ echo $_smarty_tpl->tpl_vars['cartCntItems']->value;
                     <div class="re-link menuCaption showHidden" onclick="showRegisterBox();">Регистрация</div>
                     <div id="form-login">
                         <form action="" method="" id="form-login">
-                        <fieldset class="input_">
-                            <div id="registerBoxHidden" class="hideme">
-                                <p>email:<br />
-                                <input type="text" id="email" class="inputbox" name="email" size="30" value=""/><br />
-                                пароль:<br />
-                                <input type="password" id="pwd1" class="inputbox" name="pwd1" size="30" value=""/><br />
-                                повторить пароль:<br />
-                                <input type="password" id="pwd2"class="inputbox" name="pwd2" size="30" value=""/><br />
-                                </p>
-                                <input type="button" class="buttonLogin" onclick="registerNewUser();" value="Зарегистрироваться"/>
-                            </div>
-                        </fieldset> 
-                            </form>
+                            <fieldset class="input_">
+                                <div id="registerBoxHidden" class="hideme">
+                                    <p>email:<br />
+                                    <input type="text" id="email" name="email" size="30" value=""/><br />
+                                    пароль:<br />
+                                    <input type="password" id="pwd1" name="pwd1" size="30" value=""/><br />
+                                    повторить пароль:<br />
+                                    <input type="password" id="pwd2" name="pwd2" size="30" value=""/><br />
+                                    </p>
+                                    <input type="button" class="buttonLogin" onclick="registerNewUser();" value="Зарегистрироваться"/>
+                                </div>
+                            </fieldset> 
+                        </form>
                     </div>
                     <p></p>
 

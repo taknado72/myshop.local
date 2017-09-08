@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.24, created on 2017-09-07 14:17:21
+<?php /* Smarty version 3.1.24, created on 2017-09-08 08:39:31
          compiled from "../views/texturia/footer.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:2967259b138d1ece530_99995344%%*/
+/*%%SmartyHeaderCode:2483059b23b23272b27_30973691%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,20 +9,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '66c69e2eb3dfa11c4c41720c5d835df5cd66ef78' => 
     array (
       0 => '../views/texturia/footer.tpl',
-      1 => 1504786623,
+      1 => 1504852768,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2967259b138d1ece530_99995344',
+  'nocache_hash' => '2483059b23b23272b27_30973691',
   'has_nocache_code' => false,
   'version' => '3.1.24',
-  'unifunc' => 'content_59b138d2360966_21148004',
+  'unifunc' => 'content_59b23b23299c27_34739101',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_59b138d2360966_21148004')) {
-function content_59b138d2360966_21148004 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_59b23b23299c27_34739101')) {
+function content_59b23b23299c27_34739101 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '2967259b138d1ece530_99995344';
+$_smarty_tpl->properties['nocache_hash'] = '2483059b23b23272b27_30973691';
 ?>
 
 
@@ -41,16 +41,16 @@ $_smarty_tpl->properties['nocache_hash'] = '2967259b138d1ece530_99995344';
 
 <div id="jf-footer">
     <div id="jf-footermodule">
-        <p>"Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus."</p>
+        <p>"Не откладывай на завтра то, что можно сделать сегодня!"</p>
     </div>
     
     <div id="jf-copyright">
-	This template was made by <a title="Joom Freak" href="http://www.joomfreak.com/" target="_blank" rel="follow">JoomFreak</a> <span>|</span>  <a title="3D-Scanner Texturen" href="http://www.print-textures.com/" target="_blank" rel="follow">3D-Scanner Texturen</a>
+	Сайт разработан <a title="Studio Barrikada" href="#" target="_blank" rel="follow">Studio Barrikada</a> <span>|</span>  <a title="3D-Scanner Texturen" href="#" target="_blank" rel="follow">3D-Scanner Texturen</a>
     </div>
     
     <div id="jf-footermenu">
         <ul class="menu">
-        <li class="item-464 active"><a href="http://joomla.local/index.php?option=com_content&amp;view=featured&amp;Itemid=435"><span>Home</span></a></li><li class="item-444"><a href="http://www.kreatif-multimedia.com/"><span>kreatif-multimedia.com</span></a></li><li class="item-207"><a href="http://joomla.org/"><span>Joomla.org</span></a></li></ul>
+        <li class="item-464 active"><a href="#"><span>Главная</span></a></li><li class="item-444"><a href="http://www.moneyshop.ua/"><span>moneyshop.ua</span></a></li><li class="item-207"><a href="http://barrikada.tv/"><span>barrikada.tv</span></a></li></ul>
         <div class="clr"></div>
     </div>    
   

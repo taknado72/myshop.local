@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<products>
+	<product>
+		<category_id>1</category_id>
+		<name>imp FLY 100</name>
+		<description>Телефон imp FLY 100</description>
+		<price>11111</price>
+		<image>8.jpg</image>
+		<status>0</status>
+	</product>
+	
+	<product>
+		<category_id>3</category_id>
+		<name>imp GT-S3500</name>
+		<description>Телефон imp GT-S3500</description>
+		<price>3000</price>
+		<image>1.jpg</image>
+		<status>1</status>
+	</product>
+</products>
