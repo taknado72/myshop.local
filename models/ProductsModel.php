@@ -6,12 +6,36 @@
  */
 
 /**
- * Получаем последние добавленные товары
+ * Получаем последние добавленные товары (вариант с пагинатором)
  * 
  * @param intenger $limit Лимит товаров
  * @return array Массив товаров
  */
-function getLastProducts($limit= null){
+function getLastProducts($offset = 1, $limit= 9){
+    
+    $sqlCnt = "SELECT count(id) as cnt
+            FROM `products`";
+    $rs = mysql_query($sqlCnt);
+    $cnt = createSmartyRsArray($rs);
+    
+    $sql = "SELECT *
+            FROM `products`
+            ORDER BY id DESC";
+    $sql .= " LIMIT {$offset}, {$limit}";
+    
+    $rs = mysql_query($sql); 
+    $rows = createSmartyRsArray($rs);
+    
+    return array($rows, $cnt[0]['cnt']);
+}
+
+/**
+ * Получаем последние добавленные товары (вариант без пагинатора)
+ * 
+ * @param intenger $limit Лимит товаров
+ * @return array Массив товаров
+ */
+function getLastProducts_($limit= null){
     
     $sql = "SELECT *
             FROM `products`
@@ -24,6 +48,11 @@ function getLastProducts($limit= null){
     
     return createSmartyRsArray($rs);
 }
+
+
+
+
+
 
 /**
  * Получить продукты для категории $itemId

@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.24, created on 2017-09-07 12:06:40
+<?php /* Smarty version 3.1.24, created on 2017-09-08 17:58:37
          compiled from "../views/texturia/header.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:1032159b11a30e93e42_02999304%%*/
+/*%%SmartyHeaderCode:2805859b2be2d1a96d5_69050237%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'be6612af286b890d186e55fe52890ec278701858' => 
     array (
       0 => '../views/texturia/header.tpl',
-      1 => 1504778797,
+      1 => 1504886297,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1032159b11a30e93e42_02999304',
+  'nocache_hash' => '2805859b2be2d1a96d5_69050237',
   'variables' => 
   array (
     'pageTitle' => 0,
@@ -21,13 +21,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.24',
-  'unifunc' => 'content_59b11a30ebaf40_37955189',
+  'unifunc' => 'content_59b2be2d2ab412_81998252',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_59b11a30ebaf40_37955189')) {
-function content_59b11a30ebaf40_37955189 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_59b2be2d2ab412_81998252')) {
+function content_59b2be2d2ab412_81998252 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '1032159b11a30e93e42_02999304';
+$_smarty_tpl->properties['nocache_hash'] = '2805859b2be2d1a96d5_69050237';
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" slick-uniqueid="1" lang="en-gb">
     <head>

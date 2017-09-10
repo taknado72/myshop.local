@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.24, created on 2017-09-07 11:46:35
+<?php /* Smarty version 3.1.24, created on 2017-09-09 15:17:28
          compiled from "../views/texturia/index.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:451159b1157b923c59_04092221%%*/
+/*%%SmartyHeaderCode:2539459b3e9e843c598_96382670%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,25 +9,26 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '733e87b3ff65e8c1395d886b5bb6d028592ecc98' => 
     array (
       0 => '../views/texturia/index.tpl',
-      1 => 1504777582,
+      1 => 1504963006,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '451159b1157b923c59_04092221',
+  'nocache_hash' => '2539459b3e9e843c598_96382670',
   'variables' => 
   array (
     'rsProducts' => 0,
     'item' => 0,
+    'paginator' => 0,
   ),
   'has_nocache_code' => false,
   'version' => '3.1.24',
-  'unifunc' => 'content_59b1157b971e59_05649540',
+  'unifunc' => 'content_59b3e9e850f4c0_52115252',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_59b1157b971e59_05649540')) {
-function content_59b1157b971e59_05649540 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_59b3e9e850f4c0_52115252')) {
+function content_59b3e9e850f4c0_52115252 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '451159b1157b923c59_04092221';
+$_smarty_tpl->properties['nocache_hash'] = '2539459b3e9e843c598_96382670';
 ?>
 
 
@@ -74,6 +75,24 @@ $_smarty_tpl->tpl_vars['item'] = $foreach_item_Sav;
 }
 ?>
             </div>
+            
+            
+            <div class="pagination">
+                <?php if ($_smarty_tpl->tpl_vars['paginator']->value['currentPage'] != 1) {?>
+                    <span class='p_prev'><a href="<?php echo $_smarty_tpl->tpl_vars['paginator']->value['link'];
+echo $_smarty_tpl->tpl_vars['paginator']->value['currentPage']-1;?>
+">&nbsp;</a></span>
+                <?php }?>
+                <strong><span><?php echo $_smarty_tpl->tpl_vars['paginator']->value['currentPage'];?>
+</span></strong>
+                
+                <?php if ($_smarty_tpl->tpl_vars['paginator']->value['currentPage'] < $_smarty_tpl->tpl_vars['paginator']->value['pageCnt']) {?>
+                    <span class='p_next'><a href="<?php echo $_smarty_tpl->tpl_vars['paginator']->value['link'];
+echo $_smarty_tpl->tpl_vars['paginator']->value['currentPage']+1;?>
+">&nbsp;</a></span>
+                <?php }?>
+                
+            </div>    
             
 </div><?php }
 }

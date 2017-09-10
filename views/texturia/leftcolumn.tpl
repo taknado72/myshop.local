@@ -66,10 +66,10 @@
                          <form action="" method="" id="form-login">
                          <fieldset class="input">
                             <p id="form-login-username">
-                                <input type="text" id="loginEmail" name="username" class="inputbox" size="30" value="Username" onblur="if(this.value=='') this.value='Username';" onfocus="if(this.value=='Username') this.value='';" type="text">
+                                <input type="text" id="loginEmail" name="username" class="inputbox" size="26" value="Username" onblur="if(this.value=='') this.value='Username';" onfocus="if(this.value=='Username') this.value='';" type="text">
                             </p>
                             <p id="form-login-password">
-                                <input type="password" id="loginPwd" name="password" class="inputbox" size="30" value="Password" onblur="if(this.value=='') this.value='Password';" onfocus="if(this.value=='Password') this.value='';" alt="password" type="password">
+                                <input type="password" id="loginPwd" name="password" class="inputbox" size="26" value="Password" onblur="if(this.value=='') this.value='Password';" onfocus="if(this.value=='Password') this.value='';" alt="password" type="password">
                             </p>    
 
                             <p style="text-align:right">
@@ -86,11 +86,11 @@
                             <fieldset class="input_">
                                 <div id="registerBoxHidden" class="hideme">
                                     <p>email:<br />
-                                    <input type="text" id="email" name="email" size="30" value=""/><br />
+                                    <input type="text" id="email" name="email" size="26" value=""/><br />
                                     пароль:<br />
-                                    <input type="password" id="pwd1" name="pwd1" size="30" value=""/><br />
+                                    <input type="password" id="pwd1" name="pwd1" size="26" value=""/><br />
                                     повторить пароль:<br />
-                                    <input type="password" id="pwd2" name="pwd2" size="30" value=""/><br />
+                                    <input type="password" id="pwd2" name="pwd2" size="26" value=""/><br />
                                     </p>
                                     <input type="button" class="buttonLogin" onclick="registerNewUser();" value="Зарегистрироваться"/>
                                 </div>

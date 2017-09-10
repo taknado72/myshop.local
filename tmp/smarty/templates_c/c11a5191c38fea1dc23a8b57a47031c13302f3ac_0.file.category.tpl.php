@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.24, created on 2017-09-08 09:57:32
+<?php /* Smarty version 3.1.24, created on 2017-09-08 18:04:07
          compiled from "../views/texturia/category.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:549659b24d6c0c23e1_87966888%%*/
+/*%%SmartyHeaderCode:1697559b2bf7753b0c3_22061207%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'c11a5191c38fea1dc23a8b57a47031c13302f3ac' => 
     array (
       0 => '../views/texturia/category.tpl',
-      1 => 1504857443,
+      1 => 1504886297,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '549659b24d6c0c23e1_87966888',
+  'nocache_hash' => '1697559b2bf7753b0c3_22061207',
   'variables' => 
   array (
     'rsCategory' => 0,
@@ -23,13 +23,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.24',
-  'unifunc' => 'content_59b24d6c1105e4_06760424',
+  'unifunc' => 'content_59b2bf775ead73_63503968',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_59b24d6c1105e4_06760424')) {
-function content_59b24d6c1105e4_06760424 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_59b2bf775ead73_63503968')) {
+function content_59b2bf775ead73_63503968 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '549659b24d6c0c23e1_87966888';
+$_smarty_tpl->properties['nocache_hash'] = '1697559b2bf7753b0c3_22061207';
 ?>
 
 <h1> Товары категории <?php echo $_smarty_tpl->tpl_vars['rsCategory']->value['name'];?>

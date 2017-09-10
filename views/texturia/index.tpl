@@ -25,4 +25,17 @@
 {/foreach}
             </div>
             
+            
+            <div class="pagination">
+                {if $paginator['currentPage'] != 1}
+                    <span class='p_prev'><a href="{$paginator['link']}{$paginator['currentPage']-1}">&nbsp;</a></span>
+                {/if}
+                <strong><span>{$paginator['currentPage']}</span></strong>
+                
+                {if $paginator['currentPage'] < $paginator['pageCnt']}
+                    <span class='p_next'><a href="{$paginator['link']}{$paginator['currentPage']+1}">&nbsp;</a></span>
+                {/if}
+                
+            </div>    
+            
 </div>

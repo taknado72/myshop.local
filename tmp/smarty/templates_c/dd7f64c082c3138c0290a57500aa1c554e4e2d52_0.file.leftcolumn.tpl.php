@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.24, created on 2017-09-07 16:23:41
+<?php /* Smarty version 3.1.24, created on 2017-09-08 18:02:31
          compiled from "../views/texturia/leftcolumn.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:1329659b1566db85608_75460829%%*/
+/*%%SmartyHeaderCode:1380059b2bf17b05971_00583193%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'dd7f64c082c3138c0290a57500aa1c554e4e2d52' => 
     array (
       0 => '../views/texturia/leftcolumn.tpl',
-      1 => 1504793957,
+      1 => 1504886544,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1329659b1566db85608_75460829',
+  'nocache_hash' => '1380059b2bf17b05971_00583193',
   'variables' => 
   array (
     'rsCategories' => 0,
@@ -25,13 +25,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.24',
-  'unifunc' => 'content_59b1566dc21a01_73168706',
+  'unifunc' => 'content_59b2bf17c1af32_18347577',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_59b1566dc21a01_73168706')) {
-function content_59b1566dc21a01_73168706 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_59b2bf17c1af32_18347577')) {
+function content_59b2bf17c1af32_18347577 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '1329659b1566db85608_75460829';
+$_smarty_tpl->properties['nocache_hash'] = '1380059b2bf17b05971_00583193';
 ?>
    <div id="jf-right">
        <div class="jfmod module" id="Mod88"> 
@@ -134,10 +134,10 @@ echo $_smarty_tpl->tpl_vars['cartCntItems']->value;
                          <form action="" method="" id="form-login">
                          <fieldset class="input">
                             <p id="form-login-username">
-                                <input type="text" id="loginEmail" name="username" class="inputbox" size="30" value="Username" onblur="if(this.value=='') this.value='Username';" onfocus="if(this.value=='Username') this.value='';" type="text">
+                                <input type="text" id="loginEmail" name="username" class="inputbox" size="26" value="Username" onblur="if(this.value=='') this.value='Username';" onfocus="if(this.value=='Username') this.value='';" type="text">
                             </p>
                             <p id="form-login-password">
-                                <input type="password" id="loginPwd" name="password" class="inputbox" size="30" value="Password" onblur="if(this.value=='') this.value='Password';" onfocus="if(this.value=='Password') this.value='';" alt="password" type="password">
+                                <input type="password" id="loginPwd" name="password" class="inputbox" size="26" value="Password" onblur="if(this.value=='') this.value='Password';" onfocus="if(this.value=='Password') this.value='';" alt="password" type="password">
                             </p>    
 
                             <p style="text-align:right">
@@ -154,11 +154,11 @@ echo $_smarty_tpl->tpl_vars['cartCntItems']->value;
                             <fieldset class="input_">
                                 <div id="registerBoxHidden" class="hideme">
                                     <p>email:<br />
-                                    <input type="text" id="email" name="email" size="30" value=""/><br />
+                                    <input type="text" id="email" name="email" size="26" value=""/><br />
                                     пароль:<br />
-                                    <input type="password" id="pwd1" name="pwd1" size="30" value=""/><br />
+                                    <input type="password" id="pwd1" name="pwd1" size="26" value=""/><br />
                                     повторить пароль:<br />
-                                    <input type="password" id="pwd2" name="pwd2" size="30" value=""/><br />
+                                    <input type="password" id="pwd2" name="pwd2" size="26" value=""/><br />
                                     </p>
                                     <input type="button" class="buttonLogin" onclick="registerNewUser();" value="Зарегистрироваться"/>
                                 </div>
